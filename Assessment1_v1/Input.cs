@@ -78,11 +78,9 @@ namespace CMP1903M_Assessment_1_Base_Code
         //Gets text input from a .txt file
         public string fileTextInput()
         {
-            string path = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), @"Sentences.txt");
-            Console.WriteLine("File path: ");
-            Console.WriteLine(path);
-            Console.ReadLine();
+            string path = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), @"Sentences.txt"); //get file path
             string text = File.ReadAllText(path); //read text file
+            Console.WriteLine(text); //prnt text file to console
             return text; //return text to main program
         }
 

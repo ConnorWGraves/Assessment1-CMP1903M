@@ -37,7 +37,6 @@ namespace CMP1903M_Assessment_1_Base_Code
             {
                 A.longWords(text);
             }
-            A.longWords(text);
 
 
             //Report the results of the analysis
